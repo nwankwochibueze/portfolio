@@ -16,15 +16,13 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="px-4">
         <div className="flex items-center justify-between h-14">
-          {/* Logo */}
           <Link
             href="/"
             className="text-lg font-bold min-h-11 min-w-11 flex items-center text-foreground hover:text-primary transition-colors"
           >
-            NC
+            N|C
           </Link>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2 min-h-11 min-w-11 flex items-center justify-center text-foreground hover:text-[#E4F222] transition-colors"
             onClick={() => setIsOpen(!isOpen)}
@@ -55,7 +53,6 @@ export default function Navbar() {
             </svg>
           </button>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
@@ -66,18 +63,9 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="https://github.com/nwankwochibueze"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 bg-[#E4F222] hover:bg-[#CFE020] text-[#1F2937] text-sm font-semibold transition min-h-11 flex items-center"
-            >
-              GitHub
-            </a>
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-2">
@@ -91,14 +79,23 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href="https://github.com/nwankwochibueze"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-2 px-6 py-3 bg-[#E4F222] hover:bg-[#CFE020] text-[#1F2937] text-sm font-semibold transition text-center min-h-11 flex items-center justify-center"
-              >
-                GitHub Profile
-              </a>
+              <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
+                <a
+                  href="#projects"
+                  onClick={() => setIsOpen(false)}
+                  className="px-6 py-3 bg-[#E4F222] hover:bg-[#CFE020] text-[#1F2937] text-sm font-semibold transition text-center min-h-11 flex items-center justify-center rounded-lg"
+                >
+                  View My Work
+                </a>
+                <a
+                  href="https://github.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 border border-border text-foreground text-sm font-semibold transition text-center min-h-11 flex items-center justify-center rounded-lg"
+                >
+                  GitHub Profile
+                </a>
+              </div>
             </div>
           </div>
         )}

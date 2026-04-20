@@ -2,15 +2,13 @@ export default function Hero() {
   return (
     <section className="pt-24 pb-12 md:pt-32 md:pb-20 lg:pt-40 lg:pb-32 px-4 space-y-6 md:space-y-8">
       <div className="space-y-3 md:space-y-4">
-        <p className="text-[#E4F222] font-medium text-sm md:text-base">
-           Hello, I&apos;m
+        <p className=" font-medium text-sm md:text-base">
+           Hello, I&apos;m Nwankwo Chibueze
         </p>
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight text-foreground">
-          Nwankwo Chibueze
+         A Web Developer based in Nigeria
         </h1>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl text-secondary font-light">
-          Software Developer
-        </h2>
+        
       </div>
       
       <p className="text-base md:text-lg text-foreground/80 leading-relaxed max-w-none md:max-w-2xl">
