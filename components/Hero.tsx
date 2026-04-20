@@ -35,7 +35,7 @@ export default function Hero() {
           View My Work
         </a>
         <a 
-          href="https://github.com/yourusername" 
+          href="https://github.com/nwankwochibueze" 
           target="_blank"
           rel="noopener noreferrer"
           className="px-6 py-3 border border-border hover:bg-card-hover rounded-lg font-semibold transition-colors text-center min-h-11 flex items-center justify-center text-foreground"
