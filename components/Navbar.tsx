@@ -79,23 +79,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border">
-                <a
-                  href="#projects"
-                  onClick={() => setIsOpen(false)}
-                  className="px-6 py-3 bg-[#E4F222] hover:bg-[#CFE020] text-[#1F2937] text-sm font-semibold transition text-center min-h-11 flex items-center justify-center rounded-lg"
-                >
-                  View My Work
-                </a>
-                <a
-                  href="https://github.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 py-3 border border-border text-foreground text-sm font-semibold transition text-center min-h-11 flex items-center justify-center rounded-lg"
-                >
-                  GitHub Profile
-                </a>
-              </div>
             </div>
           </div>
         )}
