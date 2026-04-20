@@ -8,7 +8,7 @@ export default function Home() {
 
       <section id="projects" className="py-12 md:py-20">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 md:mb-10">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading">
             Featured Projects
           </h2>
           <a
@@ -24,7 +24,7 @@ export default function Home() {
       </section>
 
       <section id="skills" className="py-12 md:py-20">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-10">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-10">
           Tech Stack
         </h2>
         <div className="flex flex-col gap-4">
@@ -44,14 +44,15 @@ export default function Home() {
 
       <section id="contact" className="py-12 md:py-20">
         <div className="bg-black border border-gray-800 rounded-xl md:rounded-2xl p-6 md:p-8 lg:p-12 text-center">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading mb-4 text-white">
             Let&apos;s Work Together
           </h2>
+          
+          {/* ✅ UPDATED TEXT */}
           <p className="text-gray-400 mb-6 md:mb-8 text-sm md:text-base">
-            I&apos;m currently open to new opportunities. Whether you have a
-            question or just want to say hi, I&apos;ll try my best to get back
-            to you!
+            I&apos;m open to new opportunities. Let&apos;s connect!
           </p>
+          
           <a
             href="mailto:nwankwochibu11@gmail.com"
             className="inline-flex px-6 md:px-8 py-3 md:py-4 bg-[#E4F222] hover:bg-[#CFE020] text-black font-semibold rounded-lg transition-colors min-h-[44px] items-center justify-center"
